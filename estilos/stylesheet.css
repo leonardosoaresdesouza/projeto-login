@@ -20,18 +20,19 @@ Grandes telas: acima de 1200px
 
 */
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 768px) {
 
     body {
-        background-color: purple;
+        background-color: var(--cor1);
     }
 
     main {
         background-color: white;
         margin: auto;
-        width: 300px;
-        height: 600px;
-        
+        width: 95vw;
+        max-width: 300px;
+        height: auto;
+        min-height: 500px;
     }
 
     div#fundo img {
@@ -40,7 +41,7 @@ Grandes telas: acima de 1200px
         border-radius: 20px 20px 0px 0px;
     }
 
-    h1, p {
+    h1, .text {
         padding: 15px;
         display: block;
     }
@@ -51,12 +52,32 @@ Grandes telas: acima de 1200px
     }
 
     #pf-iemail, #pf-isen {
-        margin: 5px;
         border-radius: 10px;
+        margin: 5px;
         height: 50px;
+        width: 275px;
+        align-content: right;
+        
     }
 
-    
+    .iinput {
+        height: 40px;
+        width: 220px;
+        display: inline;
+    }
+
+    .foto {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+    }
+
+    .foto img {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 6px;
+    }
 }
 
 :root {
@@ -67,6 +88,7 @@ Grandes telas: acima de 1200px
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -79,10 +101,6 @@ h1 {
     text-align: center;
 }
 
-p {
-    padding-left: 10px;
-}
-
 main {
     display: block;
     position: absolute;
@@ -91,17 +109,28 @@ main {
     transform: translate(-50%, -50%);
     border-radius: 20px;
     margin: 20px;
+    
 }
 
 #pf-iemail, #pf-isen {
-    background-color: purple;
+    background-color: var(--cor1);
+    display: flex;
+    align-items: stretch;
+    height: 45px;
+    overflow: hidden;
 }
 
-input {
+.iinput  {
     background-color: var(--cor2);
     border-radius: 10px;
     border: 0px;
-    height: 40px;
+    margin: auto;
 }
+
+form p {
+    display: inline-block;
+
+}
+
 
 

@@ -19,19 +19,38 @@
               
               <div id="formulario" >
                  <h1>Login</h1>
-                 <p>Seja Bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                
+                 <p class="text">Seja Bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                 
                  <form action="login.php" method="post">
+                   
                     <div  id="pf-iemail">
-                        <p>
-                            <label for="iemail"> <img src="imagens/person.png" alt="imagem pessoa email"> </label>
-                            <input type="email" name="email" id="iemail">
-                        </p>
-                    </div>
+                        <p class="pf-campo">
+                            <label for="iemail">
+            
+                                <div class="foto"> 
+                                    <img src="imagens/person.png" alt="imagem pessoa email">
+                                </div> 
+
+                            </label>
+
+                              <input class="iinput" type="email" name="email" id="iemail" placeholder="seu e-mail" >
+
+                            </p>
+                     </div>
 
                     <div id="pf-isen" >
                         <p>
-                            <label for="isen"> <img id="teste" src="imagens/key.png" alt="Chave da senha"> </label>
-                            <input type="password" name="sen" id="isen">
+                            <label for="isen"> 
+                                
+                                <div class="foto">
+                                    <img id="teste" src="imagens/key.png" alt="Chave da senha">
+                                </div>
+
+                            </label>
+                        
+                             <input class="iinput" type="password" name="sen" id="isen" placeholder="sua senha" >
+                            
                         </p>
                     </div>
 
