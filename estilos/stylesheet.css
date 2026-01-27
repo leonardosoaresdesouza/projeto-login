@@ -64,6 +64,7 @@ Grandes telas: acima de 1200px
         height: 40px;
         width: 220px;
         display: inline;
+        font-size: 1em;
     }
 
     .foto {
@@ -78,11 +79,35 @@ Grandes telas: acima de 1200px
         display: block;
         padding: 6px;
     }
+
+    #Entrar {
+        background-color: #49a09d ;
+        color: white;
+        font-size: 1.3em;
+        width: 270px;
+        height: 45px;
+        border-radius: 10px;
+        border: 0px;
+        margin-bottom: 5px;
+    }
+
+    #esqueci-senha {
+        background-color: white;
+        border: 2.5px solid var(--cor2);
+        color: gray;
+        font-size: 1.3em;
+        width: 270px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+   
+
 }
 
 :root {
     --cor1:#5f2c82;
-    --cor2:#49a09d;
+    --cor2:#5ccfcb;
 }
 
 * {
@@ -129,7 +154,23 @@ main {
 
 form p {
     display: inline-block;
+}
 
+div.botoes {
+    display: block;
+    width: 100%;
+    height:120px;
+    padding-left: 6px;
+    cursor: pointer;
+}
+
+#Entrar {
+    display: block;
+    cursor: pointer;
+}
+
+#esqueci-senha {
+    cursor: pointer;
 }
 
 

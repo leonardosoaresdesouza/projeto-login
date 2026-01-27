@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="estilos/stylesheet.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+
 </head>
 <body>
     <main>
@@ -29,12 +31,12 @@
                             <label for="iemail">
             
                                 <div class="foto"> 
-                                    <img src="imagens/person.png" alt="imagem pessoa email">
+                                   <label for="iemail"><img src="imagens/person.png" alt="imagem pessoa email"></label>
                                 </div> 
 
                             </label>
 
-                              <input class="iinput" type="email" name="email" id="iemail" placeholder="seu e-mail" >
+                              <input class="iinput" type="email" name="email" id="iemail" placeholder=" seu e-mail" required >
 
                             </p>
                      </div>
@@ -44,22 +46,28 @@
                             <label for="isen"> 
                                 
                                 <div class="foto">
-                                    <img id="teste" src="imagens/key.png" alt="Chave da senha">
+                                    <label for="isen"><img id="teste" src="imagens/key.png" alt="Chave da senha"></label>
                                 </div>
 
                             </label>
                         
-                             <input class="iinput" type="password" name="sen" id="isen" placeholder="sua senha" >
+                             <input class="iinput" type="password" name="sen" id="isen" placeholder=" sua senha" required minlength="8">
                             
                         </p>
                     </div>
 
-                    <p>
-                        <input type="submit" value="Enviar">
-
-                        <input id="botao" type="button" value="Esqueci a senha" >
-                    </p>
-                 </form>
+                    <div class="botoes" >
+                        <p>
+                            <input id="Entrar" type="submit" value="Entrar">
+                         </form>   
+                           <form action="esqueci.php">
+                               
+                               <input id="esqueci-senha" type="submit" value="Esqueci a senha">
+                               
+                           </form>
+                        </p>
+                    </div>
+                 
               </div>
         </section>
     </main>
