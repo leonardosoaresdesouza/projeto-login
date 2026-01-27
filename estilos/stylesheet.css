@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*  Paleta de Cores
+
+    verde: #49a09d
+    lilas: #5f2c82
+
+*/
+
+/*Todas as demais miidias*/
+
+
+/*Typical Device Brakpoints
+
+Pequenas telas: atpe 600px
+Celular: de 600 até 768px
+Tablet: 768px até 992px
+Desktop:992px até 1200px
+Grandes telas: acima de 1200px
+
+*/
+
+@media screen and (min-width: 600px) {
+
+    body {
+        background-color: purple;
+    }
+
+    main {
+        background-color: white;
+        margin: auto;
+        width: 300px;
+        height: 600px;
+        
+    }
+
+    div#fundo img {
+        width: 300px;
+        height: 250px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    h1, p {
+        padding: 15px;
+        display: block;
+    }
+
+    form {
+        margin: auto;
+        width: 280px;
+    }
+
+    #pf-iemail, #pf-isen {
+        margin: 5px;
+        border-radius: 10px;
+        height: 50px;
+    }
+
+    
+}
+
+:root {
+    --cor1:#5f2c82;
+    --cor2:#49a09d;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    padding-left: 10px;
+}
+
+main {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+#pf-iemail, #pf-isen {
+    background-color: purple;
+}
+
+input {
+    background-color: var(--cor2);
+    border-radius: 10px;
+    border: 0px;
+    height: 40px;
+}
+
+
