@@ -28,16 +28,18 @@ Grandes telas: acima de 1200px
 
     main {
         background-color: white;
-        margin: auto;
-        width: 95vw;
+        width: 90vw;
         max-width: 300px;
         height: auto;
         min-height: 500px;
+        box-shadow: 0px 0px 10px 5px #3d1c53 ;
     }
 
     div#fundo img {
-        width: 300px;
-        height: 250px;
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        max-height: 250px; ;
         border-radius: 20px 20px 0px 0px;
     }
 
@@ -105,6 +107,25 @@ Grandes telas: acima de 1200px
 
 }
 
+ @media  screen and (min-width:769px) and (max-width:992px) {
+    
+    body {
+        background-image:linear-gradient(top var(--cor1) var(--cor2) );
+    }
+
+    main {
+        max-width: 700px; 
+    }
+    
+    #fundo img {
+        max-width: 700px;
+        
+    }
+
+ }
+
+
+
 :root {
     --cor1:#5f2c82;
     --cor2:#5ccfcb;
@@ -133,7 +154,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-    margin: 20px;
+    
     
 }
 
@@ -165,13 +186,23 @@ div.botoes {
 }
 
 #Entrar {
-    display: block;
-    cursor: pointer;
-}
+        display: block;
+        cursor: pointer;
+        background-color: #49a09d ;
+        color: white;
+        font-size: 1.3em;
+        border-radius: 10px;
+        border: 0px;
+        
+    }
 
-#esqueci-senha {
-    cursor: pointer;
-}
-
+    #esqueci-senha {
+        background-color: white;
+        border: 2.5px solid var(--cor2);
+        color: gray;
+        font-size: 1.3em;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 
 
